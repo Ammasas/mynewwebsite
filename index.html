@@ -1,52 +1,33 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comment Section</title>
+<link rel="stylesheet" href="test.css">
 </head>
+<body>
+    <div class="comments-container">
+        <h1>Comments</h1>
+        
+        <!-- Comment form -->
+        <form id="commentForm">
+            <input type="text" id="username" placeholder="Your Name" required>
+            <textarea id="comment" placeholder="Write your comment..." required></textarea>
+            <div class="form-actions">
+                <button type="submit">Post Comment</button>
+                <!-- Admin actions -->
+                <div class="admin-actions">
+                    <button id="adminButton" type="button" onclick="promptAdminPassword()">Enter Admin Mode</button>
+                    <button id="logoutButton" type="button" style="display: none;" onclick="logout()">Logout</button>
+                </div>
+            </div>
+        </form>
+        
+        <!-- Container for comments -->
+        <div id="commentsList"></div>
+    </div>
 
-<body class="homepage">
-  
-  <script src="script.js"></script>
-  
-  <h1>My Personal</h1>
-  
-  <div class="button1">
-  <button class="whatsapp"> <i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/601117780975"> Whatsapp </button></a></div>
-  <br><br><br><br>
-
-    <div class="button2">
-  <button class="Instagram"> <i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com/_fiq_a?igsh=MTlwejRnYTExYWllMQ=="> Instagram </button></a></div>
-  <br><br><br><br>
-
-  <div class="button3">
-  <button class="Telegram"><i class="fa-brands fa-telegram"></i><a href="https://t.me/A_fiiqq"> Telegram </button></a></div>
-  <br><br><br><br>
-
-  <div class="button4">
-    <button class="Tiktok"><i class="fa-brands fa-tiktok"></i><a href="https://t.me/A_fiiqq"> Tiktok </button></a></div>
-  <br><br><br><br>
-
-  <div class="button5">
-    <button class="Music"><i class="fa-solid fa-music"></i><a href="Music.html"> Music </button></a></div>
-  <br><br><br><br>
-  
-
+    <script src="test.js"></script>
 </body>
-
-
 </html>
