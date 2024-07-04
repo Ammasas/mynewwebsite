@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#commentsList {
+    margin-top: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    position: relative; /* Ensure comments are positioned relative */
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment .author {
+    font-weight: bold;
+}
+
+.comment .timestamp {
+    font-size: 0.8em;
+    color: #888;
+}
+
+#commentForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+#commentForm input,
+#commentForm textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#commentForm button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+#commentForm button:hover {
+    background-color: #0056b3;
+}
+
+.admin-actions {
+    display: flex;
+    align-items: center;
+}
+
+.admin-actions button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-actions button:hover {
+    background-color: #218838;
+}
+
+.replyForm {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.replyForm input,
+.replyForm textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.replyForm button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.replyForm button:hover {
+    background-color: #218838;
+}
+
+.replies-container {
+    margin-left: 20px;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
+
+.reply {
+    padding: 5px;
+    border-bottom: 1px solid #eee;
+}
